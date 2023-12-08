@@ -69,5 +69,7 @@ function calcularMediaFinal(){
     for (let i=0; i<notas.length;i++){
         somaDasNotas+=notas[i]
     }
-    return somaDasNotas/notas.length;
+    const mediaFinal=somaDasNotas/notas.length;
+    const precisao=10;
+    return Math.round(mediaFinal*precisao)/precisao;
 }
